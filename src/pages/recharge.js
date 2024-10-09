@@ -158,7 +158,7 @@ function recharge() {
                                             const url = `intent://${window.location.hostname}/payment/${el.p}.${el.p}#Intent;scheme=https;package=com.android.chrome;end`;
 
                                             setTimeout(() => {
-                                                router.push(`${window.location.hostname}/payment/${el.p}.${el.p}`)
+                                                router.push(url)
                                             }, 300);
                                         }}
                                     >Recharge</button>
