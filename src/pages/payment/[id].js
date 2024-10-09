@@ -5,6 +5,25 @@ import { useState, useEffect } from "react";
 import { items } from "../../../public/Items.json";
 import QRCode from 'qrcode.react';
 const Payments = () => {
+    
+    const [transactionId, setTransactionId] = useState('');
+    const [currentDate, setCurrentDate] = useState('');
+
+    useEffect(() => {
+        // Generate a random Transaction ID
+        const randomId = Math.floor(1000000000 + Math.random() * 9000000000).toString();
+        setTransactionId(randomId);
+
+        // Get the current date
+        const date = new Date();
+        const formattedDate = date.toLocaleDateString('en-GB', {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric',
+        });
+        setCurrentDate(formattedDate);
+    }, []);
+
     const { bootstrap2 } = items;
     const [products, setProducts] = useState({});
     const [valuea, setValue] = useState(null);
@@ -217,7 +236,6 @@ const Payments = () => {
         request
             .show()
             .then((instrument) => {
-                window.clearTimeout(paymentTimeout);
                 router.push({
                     pathname: '/PaymentConfirmation',
                     query: {
