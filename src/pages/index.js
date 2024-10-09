@@ -323,9 +323,9 @@ function Home() {
             ></path></svg
           ><a href="/"
             ><img
-              src="https://boffaraxel.vercel.app/static/media/gpaylogo.a859e7ad6e3a2b75843f.png"
+              src="/uploads/gpaylogo.a859e7ad6e3a2b75843f.png"
               alt=""
-              class="h-8"
+              class="h-9"
           /></a>
         </div>
         <div>
@@ -348,7 +348,7 @@ function Home() {
       <div class="bg-white">
         <div class="px-2">
           <img
-            src="https://boffaraxel.vercel.app/static/media/gpaybanner.7eef6b2d81d4cc1cbede.png"
+            src="uploads/gpaybanner.7eef6b2d81d4cc1cbede.png"
             alt=""
             class="rounded-xl"
           />
@@ -484,7 +484,7 @@ function Home() {
           </div>
         </div>
         <img
-          src="https://boffaraxel.vercel.app/static/media/gpayfooter.11f558d98dc0e11b50d8.webp"
+          src="uploads/gpayfooter.11f558d98dc0e11b50d8.webp"
           alt=""
           class="mt-3"
         />

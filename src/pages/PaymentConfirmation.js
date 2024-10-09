@@ -6,7 +6,14 @@ const PaymentConfirmation = () => {
   const { transactionId, amount, status, date } = router.query;
   return (
     <div className="confirmation-container">
-      <div className="confirmation-box">
+      <div className="confirmation-box" style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "84vh",
+        width: "80%", margin: 'auto'
+      }}>
         <svg
           className="ft-green-tick"
           xmlns="http://www.w3.org/2000/svg"

@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 const PaymentFailed = () => {
   const [loading, setLoading] = useState(true); // State to handle loading spinner
   const router = useRouter();
-  const { transactionId, amount,amount1, status, date } = router.query;
+  const { transactionId, amount, amount1, status, date } = router.query;
 
   useEffect(() => {
     // Simulate a 5-second loading period
@@ -54,15 +54,21 @@ const PaymentFailed = () => {
   // Render the payment failed message once loading is complete
   return (
     <div className="confirmation-container">
-      <div className="confirmation-box">
-        <svg
-          className="ft-red-cross"
-          xmlns="http://www.w3.org/2000/svg"
-          height="100"
-          width="100"
-          viewBox="0 0 48 48"
-          aria-hidden="true"
-        >
+      <div className="confirmation-box" style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "84vh",
+        width: "80%", margin: 'auto'
+      }}>        <svg
+        className="ft-red-cross"
+        xmlns="http://www.w3.org/2000/svg"
+        height="100"
+        width="100"
+        viewBox="0 0 48 48"
+        aria-hidden="true"
+      >
           <circle className="circle" fill="#ff0000" cx="24" cy="24" r="22" />
           <path
             className="cross"
