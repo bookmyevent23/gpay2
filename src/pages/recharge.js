@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 import Heder from '../componets/Heder'
 function recharge() {
     const router = useRouter();
-    let data = [{ p: 399, cp: 2999, d: 365 }, { p: 239, cp: 666, d: 84 }, { p: 289, cp: 1499, d: 84 }]
+    let data = [{ p: 149, cp: 749, d: 84 }, { p: 199, cp: 999, d: 84 }, { p: 249, cp: 1299, d: 84 }, { p: 279, cp: 1999, d: 180 }, { p: 389, cp: 2499, d: 365 }]
 
 
     const [value, setValue] = useState(null);
